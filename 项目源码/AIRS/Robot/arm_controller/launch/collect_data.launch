@@ -1,0 +1,11 @@
+<launch>
+
+    <!-- 启动数据收集节点，传入参数 -->
+    <node name="data_collector" pkg="arm_controller" type="data_collector_node.py" output="screen">
+        <param name="csv_directory" value="$(find arm_controller)/saves/arm_state" />
+        <param name="duration_threshold" value="10.0" />
+        <param name="joint_zero_threshold" value="0.05" />
+        <param name="rate" value="100" />
+        <param name="num_joints" value="3" />
+    </node>
+</launch>

@@ -1,0 +1,10 @@
+<launch>
+    <!-- 发布双臂对底盘补偿的节点 -->
+    <node name="kinetic_compensation_node" pkg="arm_controller" type="kinetic_compensation_node.py" output="screen">
+        <!-- 配置文件路径 -->
+        <param name="model_path" value="$(find mujoco_rl_env)/ballbotgym/assets/uni.urdf" />
+        <param name="freq" value="100" />
+        <param name="arm_joint_num" value="4" />
+        <param name="has_velocity" value="true" />
+    </node>
+</launch>

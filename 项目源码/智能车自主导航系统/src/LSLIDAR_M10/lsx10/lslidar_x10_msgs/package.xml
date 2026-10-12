@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>lslidar_x10_msgs</name>
+  <version>0.0.1</version>
+  <description>LSLIDAR X10 ROS2 message definitions</description>
+  <maintainer email="user@todo.todo">TODO: Maintainer</maintainer>
+  <license>TODO: License</license>
+  <member_of_group>rosidl_interface_packages</member_of_group>
+
+  <depend>builtin_interfaces</depend>
+  <depend>std_msgs</depend>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>rosidl_default_generators</buildtool_depend>
+  <exec_depend>rosidl_default_runtime</exec_depend>
+
+  
+</package>

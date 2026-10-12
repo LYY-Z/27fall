@@ -1,0 +1,5 @@
+map_server:
+  ros__parameters:
+    yaml_filename: "map1.yaml"  # 请根据实际地图文件名修改
+    frame_id: "map"
+    use_sim_time: false

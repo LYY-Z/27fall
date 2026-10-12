@@ -1,0 +1,10 @@
+<launch>
+
+    <!-- 启动数据收集节点，传入参数 -->
+    <node name="arm_trajectory_node" pkg="arm_controller" type="arm_trajectory_node.py" output="screen">
+        <param name="file_dir" value="$(find arm_controller)/config/episodes" />
+        <param name="arm_joint_num" value="4" />
+        <param name="hand_joint_num" value="6" />
+        <param name="freq" value="50" />
+    </node>
+</launch>

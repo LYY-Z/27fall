@@ -1,0 +1,23 @@
+<launch>
+
+    <!-- 双臂关节空间遍历节点 -->
+    <node name="traversal_arm_node" pkg="arm_controller" type="traversal_arm_node.py" output="screen">
+        <!-- 配置文件路径 -->
+        <param name="config_path" value="$(find arm_controller)/config/dual_arm_params.yaml" />
+        <param name="max_speed" value="0.2" />
+        <param name="num_samples" value="50" />
+        <param name="arm_joint_num" value="4" />
+        <param name="traversal_arm_joint_num" value="3" />
+    </node>
+
+    <!-- 启动数据收集节点，传入参数 -->
+    <node name="data_collector" pkg="arm_controller" type="data_collector_node.py" output="screen">
+        <param name="csv_directory" value="$(find arm_controller)/saves/arm_state" />
+        <param name="duration_threshold" value="10.0" />
+        <param name="joint_zero_threshold" value="0.05" />
+        <param name="rate" value="100" />
+        <param name="collect_arm_joint_num" value="3" />
+    </node>
+
+
+</launch>

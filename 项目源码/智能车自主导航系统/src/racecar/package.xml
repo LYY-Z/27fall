@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>racecar</name>
+  <version>0.0.1</version>
+  <description>Racecar ROS2 package</description>
+  <maintainer email="user@todo.todo">TODO: Maintainer</maintainer>
+  <license>TODO: License</license>
+  
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  
+  <!-- 编译依赖 -->
+  <build_depend>rclcpp</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>tf2_ros</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>tf2</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>visualization_msgs</build_depend>  <!-- 新增 visualization_msgs 依赖 -->
+  
+  <!-- 运行依赖 -->
+  <exec_depend>rclcpp</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>tf2</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
+  <exec_depend>visualization_msgs</exec_depend>  <!-- 新增 visualization_msgs 依赖 -->
+  
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+</package>

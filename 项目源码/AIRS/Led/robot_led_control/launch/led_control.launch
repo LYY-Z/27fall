@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="robot_led_control" type="led_driver_node.py" name="led_driver_node" output="screen">
+        <rosparam command="load" file="$(find robot_led_control)/config/led_control.yaml" />
+    </node>
+</launch>
